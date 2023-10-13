@@ -106,7 +106,7 @@ pip install -q SentencePiece transformers
 
 To evaluate the LMCrot model on an independent test set, we've made the necessary data available for download. You can access it using the following link:
 
-[Download the Data](https://drive.google.com/drive/folders/1cp6UHSoN5vOLp1XkZOlmgklA5WUhpFIj)
+[Download the Independent Data](https://drive.google.com/drive/folders/1cp6UHSoN5vOLp1XkZOlmgklA5WUhpFIj)
 
 Once you have downloaded the data, place all the data files under a folder named `independent_data` in the same directory as the evaluation script.
 
