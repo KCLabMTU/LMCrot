@@ -1,0 +1,11 @@
+python==3.8.10
+numpy==1.23.5
+pandas==1.5.3
+seaborn==0.12.2
+tqdm==4.65.0
+pyfiglet==0.8.post1
+matplotlib==3.7.1
+scikit-learn==1.3.0
+Bio==1.81
+tensorflow==2.12.0
+keras==2.12.0
