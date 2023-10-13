@@ -108,8 +108,9 @@ To evaluate the LMCrot model on an independent test set, we've made the necessar
 
 [Download the Data](https://drive.google.com/drive/folders/1cp6UHSoN5vOLp1XkZOlmgklA5WUhpFIj)
 
-After ensuring that all the requirements are installed, you can evaluate the model by running the command below:
+Once you have downloaded the data, place all the data files under a folder named `independent_data` in the same directory as the evaluation script.
 
+After ensuring that all the requirements are installed, you can evaluate the model by running the command below:
 ```shell
 python3 evaluate_model.py
 ```
