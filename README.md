@@ -6,7 +6,7 @@
 
 
  <p align="center">
-An Interpretable Approach to Predict Crotonylation Modification in Proteins Using Transformer-based Protein Language Model and Residual Network 
+An Interpretable Approach to Predict Crotonylation (Kcr) Modification in Proteins Using Transformer-based Protein Language Model and Residual Network 
  </p>
  
 ---
@@ -18,30 +18,28 @@ An Interpretable Approach to Predict Crotonylation Modification in Proteins Usin
 </p>
 
 <p align="center">
-<a href="https://www.python.org/"><img alt="python" src="https://img.shields.io/badge/Python-3.9.7-blue.svg"/></a>
-<a href="https://www.tensorflow.org/"><img alt="tensorflow" src="https://img.shields.io/badge/TensorFlow-2.9.1-orange.svg"/></a>
-<a href="https://keras.io/"><img alt="Keras" src="https://img.shields.io/badge/Keras-2.9.0-red.svg"/></a>
-<a href="https://huggingface.co/transformers/"><img alt="Transformers" src="https://img.shields.io/badge/Transformers-4.18.0-yellow.svg"/></a>
+<a href="https://www.python.org/"><img alt="python" src="https://img.shields.io/badge/Python-3.8.10-blue.svg"/></a>
+<a href="https://www.tensorflow.org/"><img alt="tensorflow" src="https://img.shields.io/badge/TensorFlow-2.12.0-orange.svg"/></a>
+<a href="https://keras.io/"><img alt="Keras" src="https://img.shields.io/badge/Keras-2.12.0-red.svg"/></a>
+<a href="https://huggingface.co/transformers/"><img alt="Transformers" src="https://img.shields.io/badge/Transformers-4.20.1-yellow.svg"/></a>
 <a href="https://pytorch.org/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-1.11.0-orange.svg"/></a>
-<a href="https://biopython.org/"><img alt="Bio" src="https://img.shields.io/badge/Bio-1.5.2-brightgreen.svg"/></a>
-<a href="https://scikit-learn.org/"><img alt="scikit_learn" src="https://img.shields.io/badge/scikit_learn-1.2.0-blue.svg"/></a>
-<a href="https://matplotlib.org/"><img alt="matplotlib" src="https://img.shields.io/badge/matplotlib-3.5.1-blueviolet.svg"/></a>
+<a href="https://biopython.org/"><img alt="Bio" src="https://img.shields.io/badge/Bio-1.81-brightgreen.svg"/></a>
+<a href="https://scikit-learn.org/"><img alt="scikit_learn" src="https://img.shields.io/badge/scikit_learn-1.3.0-blue.svg"/></a>
+<a href="https://matplotlib.org/"><img alt="matplotlib" src="https://img.shields.io/badge/matplotlib-3.7.1-blueviolet.svg"/></a>
 <a href="https://numpy.org/"><img alt="numpy" src="https://img.shields.io/badge/numpy-1.23.5-red.svg"/></a>
-<a href="https://pandas.pydata.org/"><img alt="pandas" src="https://img.shields.io/badge/pandas-1.5.0-yellow.svg"/></a>
-<a href="https://docs.python-requests.org/en/latest/"><img alt="requests" src="https://img.shields.io/badge/requests-2.27.1-green.svg"/></a>
-<a href="https://seaborn.pydata.org/"><img alt="seaborn" src="https://img.shields.io/badge/seaborn-0.11.2-lightgrey.svg"/></a>
-<a href="https://tqdm.github.io/"><img alt="tqdm" src="https://img.shields.io/badge/tqdm-4.63.0-blue.svg"/></a>
-<a href="https://xgboost.readthedocs.io/en/latest/"><img alt="xgboost" src="https://img.shields.io/badge/xgboost-1.5.0-purple.svg"/></a>
-<a href="https://github.com/KCLabMTU/pLMSNOSite/commits/main"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KCLabMTU/pLMSNOSite.svg?style=flat&color=blue"></a>
-<a href="https://github.com/KCLabMTU/pLMSNOSite/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/KCLabMTU/pLMSNOSite.svg?style=flat&color=blue"></a>
-<a href="https://github.com/KCLabMTU/pLMSNOSite/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/KCLabMTU/pLMSNOSite.svg?style=flat&color=blue"></a>
+<a href="https://pandas.pydata.org/"><img alt="pandas" src="https://img.shields.io/badge/pandas-1.5.3-yellow.svg"/></a>
+<a href="https://seaborn.pydata.org/"><img alt="seaborn" src="https://img.shields.io/badge/seaborn-0.12.2-lightgrey.svg"/></a>
+<a href="https://tqdm.github.io/"><img alt="tqdm" src="https://img.shields.io/badge/tqdm-4.65.0-blue.svg"/></a>
+<a href="https://github.com/KCLabMTU/LMCrot/commits/main"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KCLabMTU/LMCrot.svg?style=flat&color=blue"></a>
+<a href="https://github.com/KCLabMTU/LMCrot/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/KCLabMTU/LMCrot.svg?style=flat&color=blue"></a>
+<a href="https://github.com/KCLabMTU/LMCrot/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/KCLabMTU/LMCrot.svg?style=flat&color=blue"></a>
 
 
  
 </p>
 
 ##  About
-pLMSNOSite is a robust predictor of S-nitrosylation modification sites in protein sequences. It employs an intermediate-fusion-based stacked generalization approach to harness the representational power of global contextual embeddings obtained from a transformer protein language model called [`ProtT5-XL-UniRef50`](https://github.com/agemagician/ProtTrans) combined with local contextual embeddings from the supervised word embedding layer.
+LMCrot is a robust predictor of Crotonylation modification sites in protein sequences. It employs an intermediate-fusion-based stacked generalization approach to harness the representational power of global contextual embeddings obtained from a transformer protein language model called [`ProtT5-XL-UniRef50`](https://github.com/agemagician/ProtTrans) combined with local contextual embeddings from the supervised word embedding layer and amino acid properties.
 
 #### About ProtT5-XL-UniRef50
 [`ProtT5-XL-UniRef50`](https://github.com/agemagician/ProtTrans) is a transformer-based protein language model that was developed by Rostlab. This model uses Google's T5 (Text-to-Text Transfer Transformer) architecture. Using the Masked Language Modelling (MLM) objective, ProtT5 was trained on the UniRef50 dataset (consisting of 45 million protein sequences) in a self-supervised fashion. This comprehensive training allows the model to effectively capture and understand the context within protein sequences, proving valuable for tasks like predicting PTM sites. More details about ProtT5 are as follows:
@@ -85,19 +83,19 @@ pip install -r requirements.txt
 
 Required libraries and versions: 
 <code>
-Bio==1.5.2
-keras==2.9.0
-matplotlib==3.5.1
+python==3.8.10
 numpy==1.23.5
-pandas==1.5.0
-requests==2.27.1
-scikit_learn==1.2.0
-seaborn==0.11.2
-tensorflow==2.9.1
+pandas==1.5.3
+seaborn==0.12.2
+tqdm==4.65.0
+pyfiglet==0.8.post1
+matplotlib==3.7.1
+scikit-learn==1.3.0
+Bio==1.81
+tensorflow==2.12.0
+keras==2.12.0
 torch==1.11.0
-tqdm==4.63.0
-transformers==4.18.0
-xgboost==1.5.0
+transformers==4.20.1
 </code>
 
 ## Install Transformers
@@ -123,12 +121,14 @@ To evaluate our model on the independent test set, we have already placed the te
 1. The prediction runtime directly depends on the length of the input sequence. Longer sequences require more time for ProtT5 to generate feature vectors, and consequently, more time is needed for prediction.
 2. In order to tailor the system to your specific requirements, we have ensured that modifying the decision threshold cut-off value is simple and straightforward. Here's what you need to do:
    - Open the `predict.py` file 
-     - Navigate to line `171`
+     - Navigate to line `281`
      - You'll find the current cut-off value is set at `0.5`
-     - Adjust this to any preferred cut-off value 
-
+     - Adjust this to any preferred cut-off value
+       
    By following these simple steps, you can easily customize the decision threshold cut-off value to better meet the needs of your project.
-
+3. Please note that the index is `zero-based`. For instance, a site position at `45` will be recognized as `44` by the program.
+4. With a window size of `31`, the site-of-interest will be positioned at the `15th` index (keeping in mind the index starts from `0`).
+5. By default, the transformer model operates using the CPU. If you prefer to use a GPU, you can modify the configuration on line `71`.
 
 ## Funding 
 <p>
