@@ -115,7 +115,7 @@ After ensuring that all the requirements are installed, you can evaluate the mod
 python3 evaluate_model.py
 ```
 
-## Predict Crotonylatiom modification in your own sequence
+## Predict Crotonylation modification in your own sequence
 1. Place your FASTA file in the `input/sequence.fasta` directory.
 2. Run the following command:
    ```shell
