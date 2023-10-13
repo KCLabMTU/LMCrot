@@ -223,7 +223,7 @@ def get_predictions(model, data):
 
     return pd.DataFrame(intermediate_output)
 
-def get_FEPS_features(peptide_list):
+def get_FEPS_features(peptide):
     return np.random.uniform(-1, 1, (1, 1343))
 
 
