@@ -6,7 +6,7 @@
 
 
  <p align="center">
-An Interpretable Approach to Predict Crotonylation (Kcr) Modification in Proteins Using Transformer-based Protein Language Model and Residual Network 
+Predict Crotonylation (Kcr) Modification in Proteins Using Transformer-based Protein Language Model and Residual Network 
  </p>
  
 ---
