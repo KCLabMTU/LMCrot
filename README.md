@@ -53,39 +53,9 @@ Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language 
 
 ## Webserver  :globe_with_meridians:
 
-You can access the webserver of pLMSNOSite at [kcdukkalab.org/pLMSNOSite/](http://kcdukkalab.org/pLMSNOSite/).
+You can access the webserver of LMCrot at [kcdukkalab.org/pLMSNOSite/](http://kcdukkalab.org/pLMSNOSite/).
 
-## Cite this article
-Pratyush, P., Pokharel, S., Saigo, H. et al. pLMSNOSite: an ensemble-based approach for predicting protein S-nitrosylation sites by integrating supervised word embedding and embedding from pre-trained protein language model. BMC Bioinformatics 24, 41 (2023). https://doi.org/10.1186/s12859-023-05164-9
-
-The corresponding BibTeX:
-```
-@article{ WOS:000934967300003,
-Author = {Pratyush, Pawel and Pokharel, Suresh and Saigo, Hiroto and Kc, Dukka B.},
-Title = {pLMSNOSite: an ensemble-based approach for predicting protein
-   S-nitrosylation sites by integrating supervised word embedding and
-   embedding from pre-trained protein language model},
-Journal = {BMC BIOINFORMATICS},
-Year = {2023},
-Volume = {24},
-Number = {1},
-Month = {FEB 8},
-DOI = {10.1186/s12859-023-05164-9},
-Article-Number = {41},
-ISSN = {1471-2105},
-ORCID-Numbers = {Pratyush, Pawel/0000-0002-4210-1200},
-Unique-ID = {WOS:000934967300003},
-}
-```
-
-## Authors  :writing_hand:
-Pawel Pratyush<sup>1</sup>, Suresh Pokharel<sup>1</sup>, Hiroto Saigo<sup>2</sup>, Dukka B KC<sup>1*</sup>
-<br>
-<sup>1</sup>Department of Computer Science, Michigan Technological University, Houghton, MI, USA.
-<br>
-<sup>2</sup>Department of Electrical Engineering and Computer Science, Kyushu University, 744, Motooka, Nishi-ku, 819-0395, Japan
-
-<sup>*</sup> Corresponding Author: dbkc@mtu.edu
+``
 
 ## Getting Started  :rocket: 
 
@@ -96,10 +66,10 @@ To get a local copy of the repository, you can either clone it or download it di
 If you have Git installed on your system, you can clone the repository by running the following command in your terminal:
 
 ```shell
-git clone git@github.com:KCLabMTU/pLMSNOSite.git
+git clone git@github.com:KCLabMTU/LMCrot.git
 ```
 ### Download the Repository
-Alternatively, if you don't have Git or prefer not to use it, you can download the repository directly from GitHub. Click [here](https://github.com/KCLabMTU/pLMSNOSite/archive/refs/heads/main.zip) to download the repository as a zip file.
+Alternatively, if you don't have Git or prefer not to use it, you can download the repository directly from GitHub. Click [here](https://github.com/KCLabMTU/LMCrot/archive/refs/heads/main.zip) to download the repository as a zip file.
 
 Note: In the 'Download the Repository' section, the link provided is a direct download link to the repository's `main` branch as a zip file. This may differ if your repository's default branch is named differently.
 
@@ -134,24 +104,20 @@ xgboost==1.5.0
 ```shell
 pip install -q SentencePiece transformers
 ```
-## Evaluate pLMSNOSite on Independent Test Set
+## Evaluate LMCrot on Independent Test Set
 To evaluate our model on the independent test set, we have already placed the test sequences and corresponding ProtT5 features in `data/test/` folder. After installing all the requirements, run the following command:
 <br>
 ```shell
  python evaluate_model.py
 ```
 
-## Predict S-Nitrosylation modification in your own sequence
+## Predict Crotonylatiom modification in your own sequence
 1. Place your FASTA file in the `input/sequence.fasta` directory.
 2. Run the following command:
    ```shell
-   python predict.py
+   python3 predict.py
    ```
-3. Find the results at `output/` folder.
-
-## Training and other experiments
-1. Find training data at `data/train/` folder
-2. Find all the codes and models related to training at `training_experiments` folder (To be updated).
+3. Find the results in the current directory.
 
 ## Notes  :memo: 
 1. The prediction runtime directly depends on the length of the input sequence. Longer sequences require more time for ProtT5 to generate feature vectors, and consequently, more time is needed for prediction.
@@ -164,26 +130,10 @@ To evaluate our model on the independent test set, we have already placed the te
    By following these simple steps, you can easily customize the decision threshold cut-off value to better meet the needs of your project.
 
 
-## Collaboration  :handshake: 
-<p>
-  <a href="https://www.mtu.edu/">
-    <img src="images/mtu_logo.png" alt="MTU Logo" width="130" height="100">
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.kyushu-u.ac.jp/en/">
-    <img src="images/Kyushu_University_Logo-586x700.png" alt="Kyushu University Logo" width="100" height="110">
-  </a>
-</p>
-
-
-
 ## Funding 
 <p>
   <a href="https://www.nsf.gov/">
     <img src="images/NSF_Official_logo.svg" alt="NSF Logo" width="110" height="110" style="margin-right: 20px;">
-  </a>
-  <a href="https://www.jsps.go.jp/english/">
-    <img src="images/JSPS-logo.jpg" alt="JSPS Logo" width="180" height="70" style="margin-left: 20px;">
   </a>
 </p>
 
@@ -195,6 +145,5 @@ Should you have any inquiries related to this project, please feel free to reach
 
 - Main Contact: [dbkc@mtu.edu](mailto:dbkc@mtu.edu)
 - CC: [ppratyush@mtu.edu](mailto:ppratyush@mtu.edu)
-- CC: [sureshp@mtu.edu](mailto:sureshp@mtu.edu)
 
 We look forward to addressing your queries and concerns.
