@@ -103,10 +103,15 @@ transformers==4.20.1
 pip install -q SentencePiece transformers
 ```
 ## Evaluate LMCrot on Independent Test Set
-To evaluate our model on the independent test set, we have already placed the test sequences and corresponding ProtT5 features in `data/test/` folder. After installing all the requirements, run the following command:
-<br>
+
+To evaluate the LMCrot model on an independent test set, we've made the necessary data available for download. You can access it using the following link:
+
+[Download the Data](https://drive.google.com/drive/folders/1cp6UHSoN5vOLp1XkZOlmgklA5WUhpFIj)
+
+After ensuring that all the requirements are installed, you can evaluate the model by running the command below:
+
 ```shell
- python evaluate_model.py
+python3 evaluate_model.py
 ```
 
 ## Predict Crotonylatiom modification in your own sequence
@@ -136,8 +141,6 @@ To evaluate our model on the independent test set, we have already placed the te
     <img src="images/NSF_Official_logo.svg" alt="NSF Logo" width="110" height="110" style="margin-right: 20px;">
   </a>
 </p>
-
-
 
 
 ## Contact  :mailbox: 
