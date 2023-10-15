@@ -117,12 +117,35 @@ python3 evaluate_model.py
 ```
 
 ## Predict Crotonylation modification in your own sequence
+
+### Setup:
+
 1. Place your FASTA file in the `input/sequence.fasta` directory.
-2. Run the following command:
+
+### Command:
+
+2. Use the following command to make predictions:
+
    ```shell
-   python3 predict.py
+   python3 predict.py --win_size [WINDOW_SIZE] --device [DEVICE] --mode [MODE]
    ```
-3. Find the results in the current directory.
+   or in short form notation,
+    ```shell
+   python3 predict.py -w [WINDOW_SIZE] -d [DEVICE] -m [MODE]
+     ```
+   **Replace:**
+- `[WINDOW_SIZE]` with your desired window size for peptide/window sequence formation. (Default: 31)
+- `[DEVICE]` with the device for the transformer model (ProtT5-U50-XL) to run on. Choices: `CPU` or `GPU`. (Default: `CPU`)
+- `[MODE]` with the precision mode for computations of ProtT5. Default is `half-precision`. If any other value is given, `full-precision` will be used for embeddings generation.
+
+if you want to run the program with default parameters, then simply use the following code:
+ ```shell
+   python3 predict.py
+     ```
+## Results:
+- Find the results in the current directory.
+
+**Note:** You can always use the `-h` or `--help` flag with the `predict.py` script to get detailed information about available command-line arguments.
 
 ## Notes  :memo: 
 1. The prediction runtime directly depends on the length of the input sequence. Longer sequences require more time for ProtT5 to generate feature vectors, and consequently, more time is needed for prediction.
