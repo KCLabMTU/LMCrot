@@ -10,3 +10,4 @@ Bio==1.81
 tensorflow==2.12.0
 keras==2.12.0
 torch==1.11.0
+propy3==1.1.1
