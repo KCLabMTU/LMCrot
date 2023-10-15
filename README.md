@@ -97,6 +97,7 @@ keras==2.12.0
 torch==1.11.0
 transformers==4.20.1
 propy3==1.1.1
+plotext==5.2.8
 </code>
 
 ## Install Transformers
