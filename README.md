@@ -127,25 +127,24 @@ python3 evaluate_model.py
 2. Use the following command to make predictions:
 
    ```shell
-   python3 predict.py --win_size [WINDOW_SIZE] --device [DEVICE] --mode [MODE]
+   python3 predict.py --device [DEVICE] --mode [MODE]
    ```
    or in short form notation,
     ```shell
-   python3 predict.py -w [WINDOW_SIZE] -d [DEVICE] -m [MODE]
+   python3 predict.py -d [DEVICE] -m [MODE]
      ```
    **Replace:**
-- `[WINDOW_SIZE]` with your desired window size for peptide/window sequence formation. (Default: 31)
 - `[DEVICE]` with the device for the transformer model (ProtT5-U50-XL) to run on. Choices: `CPU` or `GPU`. (Default: `CPU`)
-- `[MODE]` with the precision mode for computations of ProtT5. Default is `half-precision`. If any other value is given, `full-precision` will be used for embedding generation.
+- `[MODE]` with the precision mode for computations of ProtT5. Default is `full-precision`. If `half-precision` is given, the embeddings will be generated in half-precision model. If any other value is given, `full-precision` will be used for embedding generation.
 
     Example:
      ```shell
-     python script_name.py -w 31 -d CPU -m half-precision
+     python3 predict.py -d CPU -m full-precision
      ```
      
 ## Running with Default Parameters:
 
-If you want to run the program with default parameters, then simply use the following hassle-free command:
+If you want to run the program with default parameters, then use the following hassle-free command:
 
 ```shell
 python3 predict.py
