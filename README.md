@@ -141,11 +141,11 @@ python3 evaluate_model.py
 if you want to run the program with default parameters, then simply use the following code:
  ```shell
    python3 predict.py
-     ```
-## Results:
+ ```
+### Results:
 - Find the results in the current directory.
 
-**Note:** You can always use the `-h` or `--help` flag with the `predict.py` script to get detailed information about available command-line arguments.
+**Note:** You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
 
 ## Notes  :memo: 
 1. The prediction runtime directly depends on the length of the input sequence. Longer sequences require more time for ProtT5 to generate feature vectors, and consequently, more time is needed for prediction.
