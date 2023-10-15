@@ -96,6 +96,7 @@ tensorflow==2.12.0
 keras==2.12.0
 torch==1.11.0
 transformers==4.20.1
+propy3==1.1.1
 </code>
 
 ## Install Transformers
