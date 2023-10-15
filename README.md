@@ -143,7 +143,7 @@ python3 evaluate_model.py
      python3 predict.py -d CPU -m full-precision
      ```
      
-## Running with Default Parameters:
+### Running with Default Parameters:
 
 If you want to run the program with default parameters, then use the following hassle-free command:
 
@@ -152,7 +152,7 @@ python3 predict.py
 ```
 
 ### Results:
-- Find the results in the current directory.
+- Find the results in the current directory. 
 
 **Note:** You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
 
