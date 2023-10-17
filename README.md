@@ -116,6 +116,11 @@ After ensuring that all the requirements are installed, you can evaluate the mod
 ```shell
 python3 evaluate_model.py
 ```
+**CLI output:**
+<!---
+-->
+<img src="images/evaluate_output.png"/ alt="Predict_Output" width="60%" height="60%"> 
+</p>
 
 ## Predict Crotonylation modification in your own sequence
 
@@ -154,7 +159,7 @@ python3 predict.py
 ### Results:
 - You can find the results as a csv file named `results.csv` in the current directory.
 
-The command line will also display the following distribution graphs towards the end: 
+The CLI will also display the following distribution graphs towards the end: 
  <p align="center">
 <!---
 -->
