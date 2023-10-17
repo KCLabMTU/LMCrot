@@ -153,6 +153,7 @@ python3 predict.py
 
 ### Results:
 - You can find the results as a csv file named `results.csv` in the current directory.
+
 The command line will also display the following distribution graphs towards the end: 
  <p align="center">
 <!---
