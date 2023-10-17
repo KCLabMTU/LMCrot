@@ -158,7 +158,7 @@ The command line will also display the following distribution graphs towards the
  <p align="center">
 <!---
 -->
-<img src="images/predict_output.png"/ alt="Predict_Output" width="50%" height="50%"> 
+<img src="images/predict_output.png"/ alt="Predict_Output" width="60%" height="60%"> 
 </p>
 
 **Note:** You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
