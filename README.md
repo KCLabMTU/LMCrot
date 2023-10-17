@@ -122,6 +122,7 @@ python3 evaluate_model.py
 -->
 <img src="images/evaluate_output.png"/ alt="Evaluate_Output" width="60%" height="60%"> 
 </p>
+
 ## Predict Crotonylation modification in your own sequence
 
 ### Setup:
