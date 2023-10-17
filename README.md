@@ -53,7 +53,6 @@ Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language 
 
 You can access the webserver of LMCrot at [kcdukkalab.org/pLMSNOSite/](http://kcdukkalab.org/pLMSNOSite/).
 
-``
 
 ## Getting Started  :rocket: 
 
