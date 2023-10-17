@@ -116,7 +116,7 @@ After ensuring that all the requirements are installed, you can evaluate the mod
 ```shell
 python3 evaluate_model.py
 ```
-**CLI output:**
+CLI output:
 <!---
 -->
 <img src="images/evaluate_output.png"/ alt="evaluate_output" width="60%" height="60%"> 
