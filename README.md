@@ -152,7 +152,13 @@ python3 predict.py
 ```
 
 ### Results:
-- Find the results in the current directory. 
+- You can find the results as a csv file named `results.csv` in the current directory.
+The command line will also display the following distribution graphs towards the end: 
+ <p align="center">
+<!---
+-->
+<img src="images/predict_output.png"/ alt="Predict_Output"> 
+</p>
 
 **Note:** You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
 
