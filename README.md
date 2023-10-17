@@ -116,12 +116,12 @@ After ensuring that all the requirements are installed, you can evaluate the mod
 ```shell
 python3 evaluate_model.py
 ```
-CLI output:
+**CLI output:**
+ <p align="center">
 <!---
 -->
-<img src="images/evaluate_output.png"/ alt="evaluate_output" width="60%" height="60%"> 
+<img src="images/evaluate_output.png"/ alt="Evaluate_Output" width="60%" height="60%"> 
 </p>
-
 ## Predict Crotonylation modification in your own sequence
 
 ### Setup:
