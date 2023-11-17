@@ -313,7 +313,7 @@ for seq_record in tqdm(SeqIO.parse(input_fasta_file, "fasta"),desc='Processing S
             phy_pred_test = get_predictions(Physico_model, X_test_phy_scaled)
             
             
-            X_stacked_test = pd.concat([prot_pred_test, emb_pred_test,phy_pred_test],axis=1)
+            X_stacked_test = pd.concat([prot_pred_test, emb_pred_test,phy_pred_test],axis=1) #intermediate fusion
             X_stacked_test_scaled = scaler_fused.transform(X_stacked_test)
 
             # load combined model
