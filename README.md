@@ -51,7 +51,7 @@ Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language 
 
 ## Webserver  :globe_with_meridians:
 
-You can access the webserver of LMCrot at [kcdukkalab.org/Lmcrot/](http://kcdukkalab.org/Lmcrot/).
+You can access the webserver of LMCrot at [`kcdukkalab.org/Lmcrot/`](http://kcdukkalab.org/Lmcrot/).
 
 ## Build Environment Specifications 💻
 The tool was developed in the following computing environment, ensuring robust and efficient functionality:
