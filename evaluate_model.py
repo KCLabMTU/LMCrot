@@ -127,9 +127,9 @@ def extract_one_windows_position(protein_id,sequence,site_residue,site,window_si
 # In[4]:
 
 
-def trim_seq(df):
+def trim_seq(df): #handy when seq. length is too large for ProtT5 to handle
     """
-    Trims or slices protein sequences to a specified window size.
+    Trims or slices protein sequences to a specified size.
 
     This function processes protein sequences longer than a specified window 
     (default 4499). Depending on the position of a specified site within the 
@@ -168,7 +168,7 @@ def trim_seq(df):
     position_old=list(df.Position)
     sequences =[]
     target=[]
-    window=4499 #window size of 4999
+    window=4499 #seq. of length 4499 
     c,n,wo,sb,se=0,0,0,0,0
     
     print("Truncating large sequences.....")
@@ -176,7 +176,7 @@ def trim_seq(df):
     print("So, site will be at: "+str((window//2) + 1)+'\n')
   
     for index,row in tqdm.tqdm(df.iterrows(), desc="Processing sequences"):
-        if len(row.sequences)>window: #do some processing if length > 4999 (win size)
+        if len(row.sequences)>window: #do some processing if length > 4499 (win size)
             if row.Position<window: #slicing from start
                 peptide=row.sequences[:window]
                 site=row.Position
@@ -187,7 +187,7 @@ def trim_seq(df):
                 site= row.Position - (len(row.sequences)-window)
                 n+=1
                 se+=1
-            else: #if site is somewhere in middle
+            else: #if the site is somewhere in the middle (take window of 4459 in this case)
                 peptide=extract_one_windows_position(row.UniProt,row.sequences,['K'],row.Position,window) #S,T 
                 site=(window//2) + 1
                 n+=1
