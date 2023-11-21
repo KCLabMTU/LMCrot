@@ -53,7 +53,7 @@ Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language 
 
 You can access the webserver of LMCrot at [`kcdukkalab.org/Lmcrot/`](http://kcdukkalab.org/Lmcrot/).
 
-## Build Environment Specifications 💻
+## Build Environment 💻
 The tool was developed in the following computing environment, ensuring robust and efficient functionality:
 - **RAM:** 380 GB
 - **Processor:** Intel Xeon(R) Silver 4216 CPU @ 2.10 GHz (32 cores)
