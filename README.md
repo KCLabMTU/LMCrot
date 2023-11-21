@@ -55,9 +55,9 @@ You can access the webserver of LMCrot at [`kcdukkalab.org/Lmcrot/`](http://kcdu
 
 ## Build Environment Specifications 💻
 The tool was developed in the following computing environment, ensuring robust and efficient functionality:
-- **RAM:** 320 GB
-- **Processor:** Intel Xeon(R) Silver 4216 CPU @ 2.10GHz (32 cores)
-- **GPU:** NVIDIA Tesla A100 Ampere 40 GB
+- **RAM:** 380 GB
+- **Processor:** Intel Xeon(R) Silver 4216 CPU @ 2.10 GHz (32 cores)
+- **GPU:** NVIDIA Tesla A100 Ampere 40 GB HBM2 (6,912 CUDA cores & 432 Tensor cores)
 - **Operating System:** Ubuntu 20.04.6 LTS (64-bit)
 
 ## Getting Started  :rocket: 
