@@ -106,13 +106,13 @@ propy3==1.1.1
 plotext==5.2.8
 </code>
 
-## Install Transformers
+### Install Transformers
 ```shell
 pip install -q SentencePiece transformers
 ```
 ## Evaluate LMCrot on Independent Test Set
 
-To evaluate the LMCrot model on an independent test set, we've made the necessary data available for download. You can access it using the following link:
+To evaluate the LMCrot model on the independent test set, we've made the necessary data available for download. You can access it using the following link:
 
 [Download the Independent Data](https://drive.google.com/drive/folders/1cp6UHSoN5vOLp1XkZOlmgklA5WUhpFIj)
 
