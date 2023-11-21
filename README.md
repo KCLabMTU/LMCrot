@@ -53,8 +53,12 @@ Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language 
 
 You can access the webserver of LMCrot at [kcdukkalab.org/Lmcrot/](http://kcdukkalab.org/Lmcrot/).
 
-
-## Getting Started  :rocket: 
+## Development Environment Specifications
+The tool was developed in the following computing environment, ensuring robust and efficient functionality:
+- **RAM:** 320 GB
+- **Processor:** Intel® Xeon(R) Silver 4216 CPU @ 2.10GHz (32 cores)
+- **GPU:** NVIDIA TU104GL [Quadro RTX 5000]
+- **Operating System:** Ubuntu 20.04.6 LTS (64-bit)## Getting Started  :rocket: 
 
 To get a local copy of the repository, you can either clone it or download it directly from GitHub.
 
