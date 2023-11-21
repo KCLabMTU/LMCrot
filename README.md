@@ -39,7 +39,7 @@ Predict Crotonylation (Kcr) Modification in Proteins Using Transformer-based Pro
 </p>
 
 ##  About
-LMCrot is a robust predictor of Crotonylation modification sites in protein sequences. It employs an intermediate-fusion-based stacked generalization approach to harness the representational power of global contextual embeddings obtained from a transformer protein language model called [`ProtT5-XL-UniRef50`](https://github.com/agemagician/ProtTrans) combined with local contextual embeddings from the supervised word embedding layer and amino acid properties.
+LMCrot is a robust predictor of crotonylation (Kcr) modification sites in protein sequences. It employs an intermediate-fusion-based stacked generalization approach to harness the representational power of global contextual embeddings obtained from a transformer protein language model called [`ProtT5-XL-UniRef50`](https://github.com/agemagician/ProtTrans) combined with local contextual embeddings from the supervised word embedding layer and amino acid properties.
 
 #### About ProtT5-XL-UniRef50
 [`ProtT5-XL-UniRef50`](https://github.com/agemagician/ProtTrans) is a transformer-based protein language model that was developed by Rostlab. This model uses Google's T5 (Text-to-Text Transfer Transformer) architecture. Using the Masked Language Modelling (MLM) objective, ProtT5 was trained on the UniRef50 dataset (consisting of 45 million protein sequences) in a self-supervised fashion. This comprehensive training allows the model to effectively capture and understand the context within protein sequences, proving valuable for tasks like predicting PTM sites. More details about ProtT5 are as follows:
@@ -129,7 +129,7 @@ python3 evaluate_model.py
 <img src="images/evaluate_output.png"/ alt="Evaluate_Output" width="60%" height="60%"> 
 </p>
 
-## Predict Crotonylation modification in your own sequence
+## Predict crotonylation-modified sites in your own sequence
 
 ### Setup:
 
