@@ -75,7 +75,8 @@ git clone git@github.com:KCLabMTU/LMCrot.git
 ### Download the Repository
 Alternatively, if you don't have Git or prefer not to use it, you can download the repository directly from GitHub. Click [here](https://github.com/KCLabMTU/LMCrot/archive/refs/heads/main.zip) to download the repository as a zip file.
 
-Note: In the 'Download the Repository' section, the link provided is a direct download link to the repository's `main` branch as a zip file. This may differ if your repository's default branch is named differently.
+> <kbd>**Note:**</kbd>
+> In the 'Download the Repository' section, the link provided is a direct download link to the repository's `main` branch as a zip file. This may differ if your repository's default branch is named differently.
 
 ## Install Libraries
 
