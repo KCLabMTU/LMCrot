@@ -174,6 +174,15 @@ The CLI will also display the following distribution graphs towards the end:
 </p>
 
 <kbd>**Note:**</kbd>You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
+<div style="
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+">
+    <strong>Note:</strong> This is a custom-styled note.
+</div>
 
 ## Notes  :memo: 
 1. The prediction runtime directly depends on the length of the input sequence. Longer sequences require more time for ProtT5 to generate feature vectors, and consequently, more time is needed for prediction.
