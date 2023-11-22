@@ -175,8 +175,8 @@ The CLI will also display the following distribution graphs towards the end:
 </p>
 
 > <kbd>**Note:**</kbd>
-> You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
-> Alternatively, you can also use the aforementioned web server version (see the previous section) for prediction.
+> 1. You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
+> 2. Alternatively, you can also use the aforementioned web server version (see the previous section) for prediction.
 
 ## Notes  :memo: 
 1. The prediction runtime directly depends on the length of the input sequence. Longer sequences require more time for ProtT5 to generate feature vectors, and consequently, more time is needed for prediction.
