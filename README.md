@@ -178,7 +178,7 @@ The CLI will also display the following distribution graphs towards the end:
 > 1. You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
 > 2. Alternatively, you can also use the aforementioned web server version (see the previous section) for prediction.
 
-## Notes  :memo: 
+## General Notes  :memo: 
 1. The prediction runtime directly depends on the length of the input sequence. Longer sequences require more time for ProtT5 to generate feature vectors, and consequently, more time is needed for prediction.
 2. In order to tailor the system to your specific requirements, we have ensured that modifying the decision threshold cut-off value is simple and straightforward. Here's what you need to do:
    - Open the `predict.py` file 
