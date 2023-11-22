@@ -173,10 +173,8 @@ The CLI will also display the following distribution graphs towards the end:
 <img src="images/predict_output.png"/ alt="Predict_Output" width="70%" height="70%"> 
 </p>
 
-You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
-:::warning
-This is a warning note.
-:::
+[Note!]You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
+
 ## Notes  :memo: 
 1. The prediction runtime directly depends on the length of the input sequence. Longer sequences require more time for ProtT5 to generate feature vectors, and consequently, more time is needed for prediction.
 2. In order to tailor the system to your specific requirements, we have ensured that modifying the decision threshold cut-off value is simple and straightforward. Here's what you need to do:
