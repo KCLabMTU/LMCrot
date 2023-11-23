@@ -195,7 +195,7 @@ The CLI will also display the following distribution graphs towards the end:
   <a href="https://www.nsf.gov/">
     <img src="images/NSF_Official_logo.svg" alt="NSF Logo" width="110" height="110" style="margin-right: 20px;">
   </a>
- National Science Foundation (NSF)
+National Science Foundation (NSF)
 </p>
 
 **Grant Numbers:** *1901793*, *2210356*
