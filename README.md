@@ -190,7 +190,7 @@ The CLI will also display the following distribution graphs towards the end:
 3. Please note that the index is `zero-based`. For instance, a site position at `45` will be recognized as `44` by the program.
 4. With a window size of `31`, the site-of-interest ('K' in this case) will be positioned at the `15th` index (keeping in mind the index starts from `0`).
 
-## Funding Agency
+## Funding
 <p>
   <a href="https://www.nsf.gov/">
     <img src="images/NSF_Official_logo.svg" alt="NSF Logo" width="110" height="110" style="margin-right: 20px;">
