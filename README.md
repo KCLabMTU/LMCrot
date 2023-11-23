@@ -188,14 +188,14 @@ The CLI will also display the following distribution graphs towards the end:
        
    By following these simple steps, you can easily customize the decision threshold cut-off value to better meet the needs of your project.
 3. Please note that the index is `zero-based`. For instance, a site position at `45` will be recognized as `44` by the program.
-4. With a window size of `31`, the site-of-interest will be positioned at the `15th` index (keeping in mind the index starts from `0`).
-5. By default, the transformer model operates using the CPU. If you prefer to use a GPU, you can simply modify the configuration on line `71`.
+4. With a window size of `31`, the site-of-interest ('K' in this case) will be positioned at the `15th` index (keeping in mind the index starts from `0`).
 
-## Funded By
+## Funding Agency
 <p>
   <a href="https://www.nsf.gov/">
     <img src="images/NSF_Official_logo.svg" alt="NSF Logo" width="110" height="110" style="margin-right: 20px;">
   </a>
+Grant Number: 
 </p>
 
 
