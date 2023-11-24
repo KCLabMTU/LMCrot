@@ -49,9 +49,9 @@ LMCrot is a robust predictor of crotonylation (Kcr) modification sites in protei
 
 Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language of Life’s Code Through Self-Supervised Learning," by A. Elnaggar et al., 2023, *IEEE Transactions on Pattern Analysis & Machine Intelligence*, 14(8).
 
-## Webserver  :globe_with_meridians:
+## Web server  :globe_with_meridians:
 
-You can access the webserver of LMCrot at [`kcdukkalab.org/Lmcrot/`](http://kcdukkalab.org/Lmcrot/).
+<> You can access the web server of LMCrot at [`kcdukkalab.org/Lmcrot/`](http://kcdukkalab.org/Lmcrot/).
 
 ## Build Environment 💻
 The tool was developed in the following computing environment, ensuring robust and efficient functionality:
@@ -173,6 +173,7 @@ The CLI will also display the following distribution graphs towards the end:
 -->
 <img src="images/predict_output.png"/ alt="Predict_Output" width="70%" height="70%"> 
 </p>
+
 In the graphs:
 - The first graph shows the distribution of predicted KCR and non-Kcr for each accession ID in the input FASTA file.
 - The second graph presents the distribution of probability values of the predicted sites.
