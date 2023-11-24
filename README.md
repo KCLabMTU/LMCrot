@@ -170,11 +170,11 @@ The CLI will also display the following distribution graphs towards the end:
  <p align="center">
 <!---
 -->
-<img src="images/predict_output.png"/ alt="Predict_Output" width="70%" height="70%"> 
+<img src="images/predict_output_new.png"/ alt="Predict_Output" width="70%" height="70%"> 
 </p>
 
 In the graphs:
-- The first graph shows the distribution of predicted KCR and non-Kcr for each accession ID in the input FASTA file.
+- The first graph shows the distribution of predicted KCR and non-Kcr for each accession ID in the input FASTA file. The decision threshold cut-off is `0.5`.
 - The second graph presents the distribution of probability values of the predicted sites.
 
 > <kbd>**Note:**</kbd>
