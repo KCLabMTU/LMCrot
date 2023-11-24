@@ -173,6 +173,9 @@ The CLI will also display the following distribution graphs towards the end:
 -->
 <img src="images/predict_output.png"/ alt="Predict_Output" width="70%" height="70%"> 
 </p>
+In the graphs:
+- The first graph shows the distribution of predicted KCR and non-Kcr for each accession ID in the input FASTA file.
+- The second graph presents the distribution of probability values of the predicted sites.
 
 > <kbd>**Note:**</kbd>
 > 1. You can always use the `-h` or `--help` flag to get detailed information about available command-line arguments.
