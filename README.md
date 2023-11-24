@@ -170,7 +170,7 @@ The CLI will also display the following distribution graphs towards the end:
  <p align="center">
 <!---
 -->
-<img src="images/predict_output_new.png"/ alt="Predict_Output" width="70%" height="70%"> 
+<img src="images/predict_ouput_new.png"/ alt="Predict_Output" width="70%" height="70%"> 
 </p>
 
 In the graphs:
