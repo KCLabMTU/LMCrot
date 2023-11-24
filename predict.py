@@ -350,13 +350,21 @@ plt.simple_multiple_bar(prot_descs, [kcr_counts, non_kcr_counts], width=100, lab
 plt.show()
 
 print('\n')
-# Plotting the distribution of probability values
+# Plotting the distribution of probability values in stacked form
 num_bins = 10
 bins = [i/num_bins for i in range(num_bins+1)]
 labels = [f"{round(bins[i]*100)}-{round(bins[i+1]*100)}%" for i in range(num_bins)]
-counts = [sum((results_df["probability"] >= bins[i]) & (results_df["probability"] < bins[i+1])) for i in range(num_bins)]
 
-plt.simple_bar(labels, counts, width=100, title='Distribution of Probability Values', color="green")
+# Count Kcr and non-Kcr for each bin
+kcr_counts = []
+non_kcr_counts = []
+
+for i in range(num_bins):
+    bin_group = results_df[(results_df["probability"] >= bins[i]) & (results_df["probability"] < bins[i+1])]
+    kcr_counts.append(sum(bin_group["prediction"] > 0.5))
+    non_kcr_counts.append(len(bin_group) - kcr_counts[-1])
+
+plt.simple_stacked_bar(labels, [kcr_counts, non_kcr_counts], width=100, title='Distribution of Probability Values', labels=["Kcr", "non-Kcr"])
 plt.show()
 
 print('\nDone..')
