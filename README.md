@@ -79,7 +79,7 @@ Alternatively, if you don't have Git or prefer not to use it, you can download t
 
 ## Install Libraries
 
-Python version: `3.9.7`
+Python version: `3.8.10`
 
 To install the required libraries, run the following command:
 
@@ -174,7 +174,7 @@ The CLI will also display the following distribution graphs towards the end:
 </p>
 
 In the graphs:
-- The first graph shows the distribution of predicted KCR and non-Kcr for each accession ID in the input FASTA file. The decision threshold cut-off is `0.5`.
+- The first graph shows the distribution of predicted Kcr and non-Kcr for each accession ID in the input FASTA file. The decision threshold cut-off is `0.5`.
 - The second graph presents the distribution of probability values of the predicted sites.
 
 > <kbd>**Note:**</kbd>
