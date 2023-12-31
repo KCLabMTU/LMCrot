@@ -28,6 +28,7 @@ import pickle
 import tqdm
 import plotext as plt
 import numpy as np
+from numpy.typing import NDArray
 import pandas as pd
 import Bio
 from Bio import SeqIO
@@ -99,7 +100,7 @@ else:
 pretrained_model = pretrained_model.to(device)
 pretrained_model = pretrained_model.eval()
 
-def get_protT5_features(sequence): 
+def get_protT5_features(sequence:str)-> NDArray: 
     """
     Extracts protein embeddings for a given protein sequence using the protT5 transformer.
     
@@ -138,7 +139,7 @@ def get_protT5_features(sequence):
     return seq_emd
 
 
-def get_input_for_embedding(window):
+def get_input_for_embedding(window: str)-> NDArray:
     """
     Converts a window of protein sequence characters into corresponding integer encodings.
     
@@ -167,7 +168,7 @@ def get_input_for_embedding(window):
     return integer_encoded
 
 
-def extract_one_windows_position(sequence,site,window_size):
+def extract_one_windows_position(sequence:str,site:int,window_size:int)->str:
     
     '''
     Description: Extract a window from the given string at given position of given size
@@ -175,7 +176,6 @@ def extract_one_windows_position(sequence,site,window_size):
     Parameters:
         protein_id (str): just used for debug purpose
         sequence (str): 
-        site_residue (chr):
         window_size(int):
     Returns:
         string: a window/section
@@ -193,7 +193,7 @@ def extract_one_windows_position(sequence,site,window_size):
     section = sequence[site - 1-half_window : site + half_window]
     return section
 
-def window_embeddings(site_position, protein_embeddings, window_size): 
+def window_embeddings(site_position:int, protein_embeddings:NDArray, window_size:int)-> NDArray: 
     """
     Extracts a window of embeddings centered around a given site position within a protein sequence.
     
@@ -227,7 +227,7 @@ def window_embeddings(site_position, protein_embeddings, window_size):
     
     return window_embedding
 
-def get_physicochemical_features(peptide):
+def get_physicochemical_features(peptide:str)-> NDArray:
     """
     Extracts FEPS (Feature Extraction from Protein Sequence) features from a given peptide sequence.
     
@@ -247,7 +247,7 @@ def get_physicochemical_features(peptide):
     return feps_features.reshape(1,-1)
 
 
-def get_predictions(model, data):
+def get_predictions(model: tf.keras.Model, data: NDArray) -> pd.DataFrame:
     """
     Extracts the output from the second last layer of a given model for the provided data.
     
@@ -286,8 +286,6 @@ print('\nLoading and Inititalization Done.. Intitiating Prediction....')
 for seq_record in tqdm(SeqIO.parse(input_fasta_file, "fasta"),desc='Processing Sequences'):
     prot_id = seq_record.id
     sequence = seq_record.seq
-    positive_predicted,negative_predicted = [],[]
-    
     # extract protT5 for full sequence and store in temporary dataframe 
     pt5_all = get_protT5_features(sequence)
     # generate embedding features and window for each amino acid in sequence
@@ -304,19 +302,17 @@ for seq_record in tqdm(SeqIO.parse(input_fasta_file, "fasta"),desc='Processing S
             # get ProtT5 features extracted above
             X_test_pt5 = window_embeddings(site, pt5_all, win_size)
             # get FEPS physciochemical properties 
-            #print(str(window))
             X_test_phy = get_physicochemical_features(str(window))
             X_test_phy_scaled = scaler_phy.transform(X_test_phy)
-            
+            # get intermediate features from each base models
             prot_pred_test = get_predictions(ProtT5_model,  np.expand_dims(X_test_pt5, axis=0))
             emb_pred_test = get_predictions(Embedding_model, [X_test_embedding])
             phy_pred_test = get_predictions(Physico_model, X_test_phy_scaled)
-            
-            
+    
             X_stacked_test = pd.concat([prot_pred_test, emb_pred_test,phy_pred_test],axis=1) #intermediate fusion
             X_stacked_test_scaled = scaler_fused.transform(X_stacked_test)
 
-            # load combined model
+            # load meta-model
             combined_model = load_model(model_path)
             y_pred = combined_model.predict(X_stacked_test_scaled, verbose = 0)[0][0]
 
@@ -334,8 +330,8 @@ print('Saving results ...')
 results_df.to_csv(output_csv_file, index = False)
 print('Results saved to ' + output_csv_file+'\n')
 
+#visualization
 grouped = results_df.groupby("prot_desc")
-
 prot_descs = []
 kcr_counts = []
 non_kcr_counts = []
