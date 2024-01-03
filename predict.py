@@ -64,11 +64,8 @@ print('-'*55)
 
 print('\nBuilding Enviroment....')
 
-
 class LMCrot:
-
     win_size=31 
-
     def __init__(self, device_choice, mode, input_fasta_file, output_csv_file, model_path, 
                  protT5_model, embedding_model, physico_model, scaler_phy, scaler_fused):
         self.device_choice = device_choice
@@ -152,8 +149,7 @@ class LMCrot:
         seq_len = (attention_mask[0] == 1).sum()
         seq_emd = embedding[:,0,:]
         return seq_emd
-
-
+        
     @log_execution_time
     def get_input_for_embedding(self,window: str)->NDArray:
         """
@@ -183,10 +179,8 @@ class LMCrot:
         integer_encoded = np.array([char_to_int[char] for char in window])
         return integer_encoded
 
-
     @log_execution_time
     def extract_one_windows_position(self,sequence:str,site:int,window_size:int)->str:
-        
         '''
         Description: Extract a window from the given string at given position of given size
                     (Need to test more conditions, optimizations)
@@ -209,7 +203,6 @@ class LMCrot:
         site=site+half_window
         section = sequence[site - 1-half_window : site + half_window]
         return section
-
 
     @log_execution_time
     def window_embeddings(self,site_position:int, protein_embeddings:NDArray, window_size:int)->NDArray: 
@@ -266,7 +259,6 @@ class LMCrot:
         feps_features = get_FEPS_features(peptide)
         return feps_features.reshape(1,-1)
 
-
     @log_execution_time
     def get_predictions(self, model: tf.keras.Model, data: NDArray) -> pd.DataFrame:
         """
@@ -289,7 +281,6 @@ class LMCrot:
 
         return pd.DataFrame(intermediate_output)
 
-   
     @log_execution_time
     def prediction(self):
         """
@@ -358,7 +349,6 @@ class LMCrot:
         self.results_df.to_csv(self.output_csv_file, index = False)
         print('Results saved to ' + self.output_csv_file+'\n')
 
-
     @log_execution_time
     def visualization(self):
         """
@@ -401,7 +391,6 @@ class LMCrot:
 
         plt.simple_stacked_bar(labels, [kcr_counts, non_kcr_counts], width=100, title='Distribution of Probability Values', labels=["Kcr", "non-Kcr"])
         plt.show()
-
 
 #main function
 if __name__ == "__main__":
