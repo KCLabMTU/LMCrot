@@ -128,8 +128,6 @@ class LMCrot:
         Notes:
         - The function adds spaces between amino acid characters to prepare the sequence for the protT5 tokenizer.
         - Rare amino acids (U, Z, O, B) are replaced with the placeholder 'X' before feature extraction.
-        - The function assumes the presence of a pretrained protT5 model and tokenizer, 
-          and that the necessary configurations are set for them.
         """
         # add space in between amino acids
         sequence = [' '.join(e) for e in sequence]
@@ -270,9 +268,7 @@ class LMCrot:
         
         Returns:
         - pd.DataFrame: A DataFrame containing the output from the second last layer for the given data.
-        
-        Note:
-        The function assumes that the model has at least two layers.
+    
         """
         layer_name = model.layers[len(model.layers)-2].name #-1 for last layer, -2 for second last and so on"
         intermediate_layer_model = Model(inputs=model.input,
@@ -288,11 +284,9 @@ class LMCrot:
         It processes each sequence, targeting on lysine ('K') residues, and extracts a window of amino acids 
         around each lysine for feature computation. Features include ProtT5 embeddings, embedding encodings, 
         and physicochemical properties, which are used for prediction with a meta-model.
-
         Results, including protein ID, site, residue, and prediction scores, are saved in a DataFrame and 
-        exported to a CSV file. The method uses class attributes for models, scalers, window size, 
-        and file paths. Existing output files are overwritten.
-
+        exported to a CSV file.
+       
         Note:
         - Requires pre-loaded and initialized models and scalers.
         - Default decision threshold for classification is 0.5, adjustable as needed.
