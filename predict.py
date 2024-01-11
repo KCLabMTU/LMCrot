@@ -331,7 +331,7 @@ class LMCrot:
                     # predict from LMCrot
                     y_pred = combined_model.predict(X_stacked_test_scaled, verbose = 0)[0][0]
                     # append results to results_df
-                    self.results_df.loc[len(self.results_df)] = [prot_id, site, amino_acid, y_pred, int(y_pred > cut_off)]
+                    self.results_df.loc[len(self.results_df)] = [prot_id, site, amino_acid, y_pred, int(y_pred > self.cut_off)]
 
         print('Prediction of all sites completed....')
 
@@ -362,7 +362,7 @@ class LMCrot:
 
         for prot_desc, group in grouped:
             prot_descs.append(prot_desc)
-            kcr_counts.append(sum(group["prediction"] > cut_off))
+            kcr_counts.append(sum(group["prediction"] > self.cut_off))
             non_kcr_counts.append(len(group) - kcr_counts[-1])
 
         colors = ["cyan", "magenta"]
@@ -381,7 +381,7 @@ class LMCrot:
 
         for i in range(num_bins):
             bin_group = self.results_df[(self.results_df["probability"] >= bins[i]) & (self.results_df["probability"] < bins[i+1])]
-            kcr_counts.append(sum(bin_group["prediction"] > cut_off))
+            kcr_counts.append(sum(bin_group["prediction"] > self.cut_off))
             non_kcr_counts.append(len(bin_group) - kcr_counts[-1])
 
         plt.simple_stacked_bar(labels, [kcr_counts, non_kcr_counts], width=100, title='Distribution of Probability Values', labels=["Kcr", "non-Kcr"])
