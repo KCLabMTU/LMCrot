@@ -65,7 +65,8 @@ print('-'*55)
 print('\nBuilding Enviroment....')
 
 class LMCrot:
-    win_size=31 
+    win_size = 31
+    cut_off = 0.5 #decision threshold cut-off
     def __init__(self, device_choice, mode, input_fasta_file, output_csv_file, model_path, 
                  protT5_model, embedding_model, physico_model, scaler_phy, scaler_fused):
         self.device_choice = device_choice
@@ -330,7 +331,7 @@ class LMCrot:
                     # predict from LMCrot
                     y_pred = combined_model.predict(X_stacked_test_scaled, verbose = 0)[0][0]
                     # append results to results_df
-                    self.results_df.loc[len(self.results_df)] = [prot_id, site, amino_acid, y_pred, int(y_pred > 0.5)]  #decision threshold cut-off is 0.5. You can change it a/c to your need
+                    self.results_df.loc[len(self.results_df)] = [prot_id, site, amino_acid, y_pred, int(y_pred > cut_off)]
 
         print('Prediction of all sites completed....')
 
@@ -361,7 +362,7 @@ class LMCrot:
 
         for prot_desc, group in grouped:
             prot_descs.append(prot_desc)
-            kcr_counts.append(sum(group["prediction"] > 0.5))
+            kcr_counts.append(sum(group["prediction"] > cut_off))
             non_kcr_counts.append(len(group) - kcr_counts[-1])
 
         colors = ["cyan", "magenta"]
@@ -380,7 +381,7 @@ class LMCrot:
 
         for i in range(num_bins):
             bin_group = self.results_df[(self.results_df["probability"] >= bins[i]) & (self.results_df["probability"] < bins[i+1])]
-            kcr_counts.append(sum(bin_group["prediction"] > 0.5))
+            kcr_counts.append(sum(bin_group["prediction"] > cut_off))
             non_kcr_counts.append(len(bin_group) - kcr_counts[-1])
 
         plt.simple_stacked_bar(labels, [kcr_counts, non_kcr_counts], width=100, title='Distribution of Probability Values', labels=["Kcr", "non-Kcr"])
