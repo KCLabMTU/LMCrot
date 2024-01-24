@@ -56,7 +56,7 @@ You can access the LMCrot web server by visiting [`kcdukkalab.org/Lmcrot/`](http
 The tool was developed in the following computing environment, ensuring robust and efficient functionality:
 - **RAM:** 384 GB
 - **Processor:** Intel Xeon(R) Silver 4216 CPU @ 2.10 GHz (32 cores)
-- **GPU:** NVIDIA Tesla A100 Ampere 40 GB HBM2 (6912 CUDA cores & 432 Tensor cores)
+- **GPU:** NVIDIA Tesla A100 Ampere 80 GB HBM2 (6912 CUDA cores, 432 Tensor cores and bandwidth 1555GB/sec)
 - **Storage:** 2TB SK hynix PC711 NVMe SSD
 - **Operating System:** Ubuntu 20.04.6 LTS (64-bit)
 
