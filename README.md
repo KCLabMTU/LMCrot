@@ -50,10 +50,10 @@ LMCrot is a robust predictor of crotonylation (Kcr) modification sites in protei
 Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language of Life’s Code Through Self-Supervised Learning," by A. Elnaggar et al., 2023, *IEEE Transactions on Pattern Analysis & Machine Intelligence*, 14(8).
 
 ## Web server  :globe_with_meridians:
-You can access the LMCrot web server by visiting [`kcdukkalab.org/Lmcrot/`](http://kcdukkalab.org/Lmcrot/).  This web-based tool allows you to submit your FASTA file containing sequences. The LMCrot model running on the server's backend will process your sequences and provide predictions.
+You can access the LMCrot web server by visiting [`kcdukkalab.org/Lmcrot/`](http://141.219.186.188/Lmcrot/).  This web-based tool allows you to submit your FASTA file containing sequences. The LMCrot model running on the server's backend will process your sequences and provide predictions.
 
 ## Build Environment 💻
-The tool was developed in the following computing environment, ensuring robust and efficient functionality:
+The tool was developed in the following high performance computing environment, ensuring robust and efficient functionality:
 - **RAM:** 384 GB
 - **Processor:** Intel Xeon(R) Silver 4216 CPU @ 2.10 GHz (32 cores)
 - **GPU:** NVIDIA Tesla A100 Ampere 80 GB HBM2 (6912 CUDA cores, 432 Tensor cores and bandwidth 1555GB/sec)
