@@ -52,6 +52,9 @@ Herein, we adopt a range of approaches for utilizing pLMs by experimenting with 
 
 Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language of Life’s Code Through Self-Supervised Learning," by A. Elnaggar et al., 2023, *IEEE Transactions on Pattern Analysis & Machine Intelligence*, 14(8).
 
+#### Architecture
+
+
 ## Web server  :globe_with_meridians:
 You can access the LMCrot web server by visiting [`kcdukkalab.org/Lmcrot/`](http://141.219.186.188/Lmcrot/).  This web-based tool allows you to submit your FASTA file containing sequences. The LMCrot model running on the server's backend will process your sequences and provide predictions.
 
