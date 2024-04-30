@@ -230,6 +230,7 @@ We extend our heartfelt thanks to Dr. Michael Heinzinger (Technical University o
   <a href="https://www.nsf.gov/">
     <img src="images/NSF_Official_logo.svg" alt="NSF Logo" width="110" height="110" style="margin-right: 20px;">
   </a>
+ <strong>NSF Grant Numbers:</strong> *1901793*, *2210356* (to D.B.K)
  <a href="NEW_LOGO_LINK">
     <img src="images/mdhhs.png" alt="NEW_LOGO_ALT_TEXT" width="110" height="110">
   </a>
