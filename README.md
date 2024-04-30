@@ -56,9 +56,27 @@ Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language 
  <p align="center">
 <!---
 -->
-<img src="images/Fig_1.png"/ alt="Evaluate_Output" width="80%" height="60%"> 
+<img src="images/Fig_1.png"/ alt="Evaluate_Output" width="100%" height="80%"> 
 </p>
 
+## Cite this article
+Pawel Pratyush, Soufia Bahmani, Suresh Pokharel, Hamid D Ismail, Dukka B KC, LMCrot: An enhanced protein crotonylation site predictor by leveraging an interpretable window-level embedding from a transformer-based protein language model, Bioinformatics, 2024;, btae290, https://doi.org/10.1093/bioinformatics/btae290
+
+The corresponding BibTeX:
+```
+@article{10.1093/bioinformatics/btae290,
+    author = {Pratyush, Pawel and Bahmani, Soufia and Pokharel, Suresh and Ismail, Hamid D and KC, Dukka B},
+    title = "{LMCrot: An enhanced protein crotonylation site predictor by leveraging an interpretable window-level embedding from a transformer-based protein language model}",
+    journal = {Bioinformatics},
+    pages = {btae290},
+    year = {2024},
+    month = {04},
+    issn = {1367-4811},
+    doi = {10.1093/bioinformatics/btae290},
+    url = {https://doi.org/10.1093/bioinformatics/btae290},
+    eprint = {https://academic.oup.com/bioinformatics/advance-article-pdf/doi/10.1093/bioinformatics/btae290/57334068/btae290.pdf},
+}
+```
 
 ## Web server  :globe_with_meridians:
 You can access the LMCrot web server by visiting [`kcdukkalab.org/Lmcrot/`](http://141.219.186.188/Lmcrot/).  This web-based tool allows you to submit your FASTA file containing sequences. The LMCrot model running on the server's backend will process your sequences and provide predictions.
