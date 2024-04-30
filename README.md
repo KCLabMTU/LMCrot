@@ -230,13 +230,13 @@ We extend our heartfelt thanks to Dr. Michael Heinzinger (Technical University o
   <a href="https://www.nsf.gov/">
     <img src="images/NSF_Official_logo.svg" alt="NSF Logo" width="110" height="110" style="margin-right: 20px;">
   </a>
- <strong>NSF Grant Numbers:</strong> *1901793*, *2210356* (to D.B.K)
  <a href="NEW_LOGO_LINK">
     <img src="images/mdhhs.png" alt="NEW_LOGO_ALT_TEXT" width="110" height="110">
   </a>
 </p>
 
-**Grant Numbers:** *1901793*, *2210356* (to D.B.K)
+**NSF Grant Numbers:** *1901793*, *2210356* (to D.B.K) 
+**MDHHS:** Michigan Sequencing Academic Partnership for Public Health Innovation and Response (MI-SAPPHIRE)
 
 ## Contact  :mailbox: 
 Should you have any inquiries related to this project, please feel free to reach out via email. Kindly CC all of the following recipients in your communication for a swift response:
