@@ -52,7 +52,7 @@ Herein, we adopt a range of approaches for utilizing pLMs by experimenting with 
 
 Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language of Life’s Code Through Self-Supervised Learning," by A. Elnaggar et al., 2023, *IEEE Transactions on Pattern Analysis & Machine Intelligence*, 14(8).
 
-#### Architecture
+## Architecture
  <p align="center">
 <!---
 -->
