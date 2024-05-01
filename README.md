@@ -222,9 +222,6 @@ In the graphs:
 3. Please note that the index is `zero-based`. For instance, a site position at `45` will be recognized as `44` by the program.
 4. With a window size of `31`, the site-of-interest ('K' in this case) will be positioned at the `15th` index (keeping in mind the index starts from `0`).
 
-## Acknowlegement
-We extend our heartfelt thanks to Dr. Michael Heinzinger (Technical University of Munich, Germany) and Dr. Meenal Chaudhari (University of Virginia, Wise) for their insightful suggestions.
-
 ## Funding
 <p>
   <a href="https://www.nsf.gov/">
