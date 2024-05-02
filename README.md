@@ -227,14 +227,14 @@ In the graphs:
   <a href="https://www.nsf.gov/">
     <img src="images/NSF_Official_logo.svg" alt="NSF Logo" width="140" height="120" style="margin-right: 40px;">
   </a>
- <a href="NEW_LOGO_LINK">
+ <a href="https://www.michigan.gov/mdhhs">
     <img src="images/mdhhs.png" alt="NEW_LOGO_ALT_TEXT" width="110" height="110">
   </a>
 </p>
 
 **NSF Grant Numbers:** *1901793*, *2210356* (to D.B.K)
 
-**MDHHS:** Michigan Sequencing Academic Partnership for Public Health Innovation and Response (MI-SAPPHIRE)
+**MDHHS Grant:** Michigan Sequencing Academic Partnership for Public Health Innovation and Response (MI-SAPPHIRE) Grant
 
 ## Contact  :mailbox: 
 Should you have any inquiries related to this project, please feel free to reach out via email. Kindly CC all of the following recipients in your communication for a swift response:
