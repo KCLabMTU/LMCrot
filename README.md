@@ -8,7 +8,7 @@
  <p align="center">
 Predict Lysine Crotonylation (Kcr) Modification in Proteins Using Transformer-based Protein Language Model and Residual Network.
   
-Paper Link: https://doi.org/10.1093/bioinformatics/btae290
+         Paper Link: https://doi.org/10.1093/bioinformatics/btae290
 
  </p>
  
