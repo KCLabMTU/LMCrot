@@ -62,7 +62,7 @@ Note: Info. in the table adopted from "ProtTrans: Towards Cracking the Language 
 </p>
 
 ## Cite this article
-   Pawel Pratyush, Soufia Bahmani, Suresh Pokharel, Hamid D Ismail, Dukka B KC, LMCrot: An enhanced protein crotonylation site predictor by leveraging an interpretable window-level embedding from a     transformer-based protein language model, Bioinformatics, 2024;, btae290, https://doi.org/10.1093/bioinformatics/btae290
+```Pawel Pratyush, Soufia Bahmani, Suresh Pokharel, Hamid D Ismail, Dukka B KC, LMCrot: An enhanced protein crotonylation site predictor by leveraging an interpretable window-level embedding from a     transformer-based protein language model, Bioinformatics, 2024;, btae290, https://doi.org/10.1093/bioinformatics/btae290
 
 The corresponding BibTeX:
 ```
